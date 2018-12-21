@@ -1,0 +1,7 @@
+<application>
+  <component name="GithubSettings">
+    <option name="LOGIN" value="jaguerr4" />
+    <option name="HOST" value="github.uci.edu" />
+    <option name="AUTH_TYPE" value="BASIC" />
+  </component>
+</application>

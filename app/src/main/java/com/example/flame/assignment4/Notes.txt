@@ -1,0 +1,43 @@
+package com.example.flame.assignment4;
+
+import android.app.Activity;
+
+import java.io.InputStreamReader;
+
+/**
+ * Created by flame on 5/24/2017.
+ */
+
+public class Notes {
+    //we want something like
+    //11111111111111111111
+    //11111111121112122121
+    //01111113131313111313
+
+    //Most likely want to read from a file
+
+    //reading from a file
+    //file must be in assets folder
+    //file is read in strings
+    String filename = "maplevel" + level;
+    string line;
+    int i = 0;
+    try
+
+    {
+
+        Context context = getcontext();
+        BufferedReader buffer = new BufferedReader(new InputStreamReader((context.getAssets().open(filename))));
+        while ((line = buffer.readLine()) ! == null){
+        screenArr[i] = line.toCharArray();
+        ++i;
+    }
+    } catch(Exception e){}
+
+
+
+    //set screen to landscape
+    setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+    SCreenView screenView = new SCreenView(this);
+    setContentView(SCreenView);
+}
